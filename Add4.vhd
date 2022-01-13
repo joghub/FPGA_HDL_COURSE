@@ -16,7 +16,7 @@ end entity Add4;
 architecture RTL of Add4 is 
     signal Out5bit : std_logic_vector(4 downto 0);
 begin 
-  Out5bit <= (‘0’ & Data1) + (‘0’ & Data2) + Cin;
+  Out5bit <= ('0' & Data1) + ('0' & Data2) + Cin;
   Sum     <= Out5bit(3 downto 0); -- 4 bits
   Cout    <= Out5bit(4);          -- 5th bit
 end architecture RTL;
